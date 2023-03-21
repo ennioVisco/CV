@@ -1,0 +1,143 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85,bottom=0.5in,top=0.5in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Ennio}{Visconti}
+\title{curriculum vitae}                               % optional, remove / comment the line if not wanted
+\address{Dresdner Strasse 107}{1200, Vienna}{Austria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+39~333~829~3949}                   % optional remove / comment the line if not wanted
+\homepage{github.com/ennioVisco}                         % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/enniovisco} 
+\email{ennio.visconti@gmail.com}                 
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%\hfill \break \hfill \break \hfill \break
+
+%\section{Interests and future}
+%\cventry{>}{Thesis area}{Formal methods for Software Engineering}{}{}{}
+%\cventry{-}{AI \& Machine Leraning}{}{}{}{}
+%\cventry{-}{Mathematical methods in Computer Science}{}{}{}{}
+
+
+%\hfill
+
+\section{Education}
+\cventry{2020}{PhD student}{Logical Methods in Computer Science at TU Wien.}{Vienna}{Austria}{Research area: Runtime Verification}
+
+\cventry{2012--2019}{Bachelor and Master of Science}{Computer Science \& Engineering - Software AI Track - at Politecnico di Milano}{Milano}{Italy}{}
+%\cventry{2012--2016}{Degree}{Computer Science \& Engineering at Poltecnico di Milano}{Milano (Italy)}{}{}
+\cventry{2011}{Summer School}{Computer Programming (C++ basics) at NYU}{New York}{USA}{}
+\cventry{2007--2012}{High school}{Classical studies at Liceo Classico M. Galdi}{Cava de' Tirreni}{Italy}{}  % arguments 3 to 6 can be left empty
+
+%\hfill
+
+\section{Experience}
+\subsection{Research}
+
+\cventry{2019-2022}{Publications}{Author of several scientific papers (MODELS'19, RV'20, SoSyM'21, MEMOCODE'21, ASE'22.}
+{}{Detailed list available at \url{https://dblp.org/pid/253/6180.html}}{}{}
+
+% \cventry{2019}{Publication}{22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS)}{}{Model-Driven Design of City Spaces via Bidirectional Transformations}{Ennio Visconti, Christos Tsigkanos, Zhenjiang Hu and Carlo Ghezzi}
+\cventry{2022}{Research Intern}{INRIA}{Grenoble}{France}{Runtime Verification intern at the Programming Languages laboratory.}
+
+
+\cventry{2018-2019}{Research Intern}{National Institute of Informatics}{Tokyo}{Japan}{Software Engineering intern at the Programming Languages laboratory.}
+
+\subsection{Vocational}
+\cventry{2020}{Co-Founder \& CTO}{fyblo}{Milano (Remote)}{}{A Blockchain-based platform that for startups' equity tokenization and exchange. \textit{\href{fyblo.com}{fyblo.com}}}
+
+\cventry{2018}{Fullstack developer}{Callmespa}{Milano}{}{Web platform developer: \textit{\href{callmespa.com}{callmespa.com}}}
+
+\cventry{2015--2017}{IT Manager}{Svoltastudenti}{Milano}{}{Manager of IT services for Svoltastudenti, Politecnico di Milano's students' union. More on \textit{\href{svoltastudenti.it}{svoltastudenti.it}}}
+
+\cventry{2014--2015}{Web app developer}{Fiat Chrysler Automobiles}{Torino}{}{Development with a teammate of a survey platform for internal usage.
+\begin{itemize}%
+\item Winner of student competition by \textit{\href{university2business.it}{university2business.it}};
+\end{itemize}}
+
+% \cventry{2015--2017}{Website development}{}{}{}{Development of several websites, both ad-hoc and by using Wordpress, Drupal and Joomla.}
+
+\subsection{Miscellaneous}
+
+\cventry{2018-2019}{National Students' Council member}{Minister of University, Instruction and Research (Italy)}{}{}{One of the 30 Italian students who constitute the students advisory board of the minister. }
+
+\cventry{2017}{Content Editor}{Politecnico di Milano \& EIT Digital}{Editor of Recommender Systems MOOC}{}{Setup of a synthetic reader using Watson by IBM Bluemix.}
+
+\cventry{2015--2017}{Student representative}{Politecnico di Milano}{Industrial \& Information Engineering School}{}{ Also, student representative in the committee against disparities and inequalities in general. }
+
+\section{Computer skills}
+\cvitem{Programming}{Haskell(very good), Java(very good), Kotlin(very good), C\# + ASP.NET( good), Python(very good), PHP(good), Javascript/Typescript(good), Scheme(basic), C/C++(basic), Erlang(basic).}
+\cvitem{Database}{Good experience in design and development of databases with MySQL and Microsoft SQL Server.}
+\cvitem{Systems}{Experience in Windows OS, MacOS and Linux (i.e. Ubuntu, Ubuntu Server, CentOS).}
+
+\cvitem{Miscellaneous} {Good knowledge of Microsoft Office's suite and Adobe Creative Cloud tools. Advanced knowledge of Git and \LaTeX. Basic knowledge of KNIME for data mining \& analytics.}
+
+\section{Languages}
+\cvitemwithcomment{Italian}{Native speaker}{}
+\cvitemwithcomment{English}{Fluent - C1}{Cambridge certifications}
+\cvitemwithcomment{German}{Entry level - A2.1}{Goethe Institut certification for A1}
+%\section{Interests}
+%\cvitem{test}{test}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
