@@ -58,4 +58,4 @@ jobs:
         git add main.pdf
         git commit -m "commit message"
         git push
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
