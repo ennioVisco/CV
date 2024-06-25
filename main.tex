@@ -27,11 +27,13 @@
 \name{Ennio}{Visconti}
 \title{curriculum vitae}                               % optional, remove / comment the line if not wanted
 % \address{Dresdner Strasse 107}{1200, Vienna}{Austria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-% \phone[mobile]{+39~333~829~3949}                   % optional remove / comment the line if not wanted
+\phone[mobile]{+39~333~829~3949}                   % optional remove / comment the line if not wanted
 \homepage{enniovisco.com}                         % optional, remove / comment the line if not wanted
 % \homepage{linkedin.com/in/enniovisco} 
-% \email{ennio.visconti@gmail.com}                 
+\email{ennio.visconti@gmail.com}                 
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\social[github]{ennioVisco}   
+\social[linkedin]{enniovisco}    
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -61,9 +63,21 @@
 %\hfill
 
 \section{Education}
-\cventry{2020}{PhD student}{Logical Methods in Computer Science at TU Wien.}{Vienna}{Austria}{Research area: Runtime Verification}
+\cventry{2020--now}{PhD candidate}{Logical Methods in Computer Science at TU Wien}{Vienna}{Austria}{
+Details:
+\begin{itemize}
+    \item Thesis on runtime verification of spatio-temporal models, where formal logic-based techniques have been combined with statistical/machine-learning techniques to develop efficient real-time monitoring. 
+    \item Served as the main maintainer of \texttt{Moonlight} (a Java-based signal monitor) and main developer of \texttt{Webmonitor} (a Kotlin-based webpage monitor, presented at a flag-ship Software Engineering conference).
+    \item Supervised a bachelor and a master student throughout their thesis. 
+    \item Delivered several seminars and exercises for the Cyber-physical systems course
+\end{itemize}
+}
 
-\cventry{2012--2019}{Bachelor and Master of Science}{Computer Science \& Engineering - Software AI Track - at Politecnico di Milano}{Milano}{Italy}{}
+\cventry{2012--2019}{Bachelor and Master of Science}{Computer Science \& Engineering - Politecnico di Milano}{Milano}{Italy}{Details:
+\begin{itemize}
+    \item Presented a new methodology to guarantee the correct synchronization of software models in the building industry. Main developer of Topocity (a open-source Haskell tool) to achieve such sync.
+\end{itemize}
+}
 %\cventry{2012--2016}{Degree}{Computer Science \& Engineering at Poltecnico di Milano}{Milano (Italy)}{}{}
 \cventry{2011}{Summer School}{Computer Programming (C++ basics) at NYU}{New York}{USA}{}
 \cventry{2007--2012}{High school}{Classical studies at Liceo Classico M. Galdi}{Cava de' Tirreni}{Italy}{}  % arguments 3 to 6 can be left empty
@@ -71,27 +85,31 @@
 %\hfill
 
 \section{Experience}
-\subsection{Research}
-
-\cventry{2019-2022}{Publications}{Author of several scientific papers (MODELS'19, RV'20, SoSyM'21, MEMOCODE'21, ASE'22).}
-{}{Detailed list available at \url{https://dblp.org/pid/253/6180.html}}{}{}
-
-% \cventry{2019}{Publication}{22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS)}{}{Model-Driven Design of City Spaces via Bidirectional Transformations}{Ennio Visconti, Christos Tsigkanos, Zhenjiang Hu and Carlo Ghezzi}
-\cventry{2022}{Research Intern}{INRIA}{Grenoble}{France}{Runtime Verification intern at the Programming Languages laboratory.}
-
-
-\cventry{2018-2019}{Research Intern}{National Institute of Informatics}{Tokyo}{Japan}{Software Engineering intern at the Programming Languages laboratory.}
-
 \subsection{Vocational}
-\cventry{2020}{Co-Founder \& CTO}{fyblo}{Milano (Remote)}{}{A Blockchain-based platform that for startups' equity tokenization and exchange. \textit{\href{fyblo.com}{fyblo.com}}}
+\cventry{2020--now}{Co-Founder \& CTO}{fyblo}{Milano (Remote)}{}{A Blockchain-based platform that for financial institutions. \textit{\href{fyblo.com}{fyblo.com}}
+\begin{itemize}
+    \item Coordinating with the business, product and legal areas to align the development with the company goals.
+    \item In charge of a project selected by the Bank of Italy together with 4 other highly-innovative financial services. 
+    \item Head of 3 senior engineers, coordinating the development of the smart contracts in Solidity, the APIs in Typescript, the frontend in Vue.js/Nuxt, and the AWS infrastructure, managed via Terraform and Github pipelines.
+\end{itemize}
+}
 
-\cventry{2018}{Fullstack developer}{Callmespa}{Milano}{}{Web platform developer: \textit{\href{callmespa.com}{callmespa.com}}}
+\cventry{2018}{Fullstack developer}{Callmespa}{Milano}{}{Web platform developer: \textit{\href{callmespa.com}{callmespa.com}}
+\begin{itemize}
+    \item Main developer for the web ordering platform, developed in PHP that was integrated in a Wordpress platform.
+\end{itemize}
+}
 
-\cventry{2015--2017}{IT Manager}{Svoltastudenti}{Milano}{}{Manager of IT services for Svoltastudenti, Politecnico di Milano's students' union. More on \textit{\href{svoltastudenti.it}{svoltastudenti.it}}}
+\cventry{2015--2017}{IT Manager}{Svoltastudenti}{Milano}{}{Manager of IT services for Svoltastudenti, Politecnico di Milano's students' union. More on \textit{\href{svoltastudenti.it}{svoltastudenti.it}}
+\begin{itemize}
+    \item Head of six volunteering Software Engineering students, in charge of the IT services of the association (managed web services contracts, devices provisioning and migrating services from Google to Microsoft Office 365).
+\end{itemize}
+}
 
-\cventry{2014--2015}{Web app developer}{Fiat Chrysler Automobiles}{Torino}{}{Development with a teammate of a survey platform for internal usage.
+\cventry{2014--2015}{Web app developer}{Fiat Chrysler Automobiles}{Torino}{}{Development with a teammate of a survey platform for internal usage (developed in C\#/.NET).
 \begin{itemize}%
 \item Winner of student competition by \textit{\href{university2business.it}{university2business.it}};
+\item In charge of the frontend development (JavaScript) and of the authentication service (in C\#) based on Kerberos to integrate in company's Microsoft SSO.
 \end{itemize}}
 
 % \cventry{2015--2017}{Website development}{}{}{}{Development of several websites, both ad-hoc and by using Wordpress, Drupal and Joomla.}
@@ -105,15 +123,17 @@
 \cventry{2015--2017}{Student representative}{Politecnico di Milano}{Industrial \& Information Engineering School}{}{ Also, student representative in the committee against disparities and inequalities in general. }
 
 \section{Computer skills}
-\cvitem{Programming}{Haskell(very good), Java(very good), Kotlin(very good), C\# + ASP.NET( good), Python(very good), PHP(good), Javascript/Typescript(good), Scheme(basic), C/C++(basic), Erlang(basic).}
+\cvitem{Programming}{Haskell(very good), Java(very good), Kotlin(very good), C\# + ASP.NET(good), Python(very good), PHP(good), Javascript/Typescript(good), Scheme(basic), C/C++(basic), Erlang(basic).}
 \cvitem{Database}{Good experience in design and development of databases with MySQL and Microsoft SQL Server.}
 \cvitem{Systems}{Experience in Windows OS, MacOS and Linux (i.e. Ubuntu, Ubuntu Server, CentOS).}
 
-\cvitem{Miscellaneous} {Good knowledge of Microsoft Office's suite and Adobe Creative Cloud tools. Advanced knowledge of Git and \LaTeX. Basic knowledge of KNIME for data mining \& analytics.}
+\cvitem{Miscellaneous} {Good knowledge of Microsoft Office's suite and Adobe Creative Cloud tools. Advanced knowledge of Git and \LaTeX. Basic knowledge of KNIME for data mining \& analytics. Proficient in web frontend technologies (HTML, XML, CSS).}
+
+\clearpage
 
 \section{Languages}
 \cvitemwithcomment{Italian}{Native speaker}{}
-\cvitemwithcomment{English}{Fluent - C1}{Cambridge certifications}
+\cvitemwithcomment{English}{Fluent - C1}{Cambridge certification - CAE}
 \cvitemwithcomment{German}{Entry level - A2.1}{Goethe Institut certification for A1}
 %\section{Interests}
 %\cvitem{test}{test}
@@ -133,6 +153,36 @@
 %\nocitemisc{misc1,misc2,misc3}
 %\bibliographystylemisc{plain}
 %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Research}
+
+\subsection{Visits}
+
+
+
+\cventry{2023--2024}{Research Visitor}{University of Trieste}{Trieste}{Italy}{Data Science and Scientific Computing unit, department of Mathematics and Geosciences.}
+
+% \cventry{2019}{Publication}{22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MODELS)}{}{Model-Driven Design of City Spaces via Bidirectional Transformations}{Ennio Visconti, Christos Tsigkanos, Zhenjiang Hu and Carlo Ghezzi}
+\cventry{2022}{Research Intern}{INRIA}{Grenoble}{France}{Runtime Verification intern at the Programming Languages laboratory.}
+
+
+\cventry{2018-2019}{Research Intern}{National Institute of Informatics}{Tokyo}{Japan}{Software Engineering intern at the Programming Languages laboratory.}
+
+\subsection{Publications}
+
+\cventry{2019-2023}{Publications}{Author of several scientific papers}
+{in the topics: software engineering, software modeling, web development, runtime verification, spatio-temporal logic, real-time monitoring, statistical model checking}{}{
+\begin{itemize}
+    \item Visconti, E., Bartocci, E., Falcone, Y., Nenzi, L. (2024). Adaptable Configuration of Decentralized Monitors. In: Castiglioni, V., Francalanza, A. (eds) Formal Techniques for Distributed Objects, Components, and Systems. FORTE 2024. Lecture Notes in Computer Science, vol 14678. Springer, Cham. https://doi.org/10.1007/978-3-031-62645-6\_11
+    \item Ennio Visconti, Christos Tsigkanos, Laura Nenzi, "WebMonitor: Verification of Web User Interfaces," in 37th IEEE/ACM International Conference on Automated Software Engineering, ASE 2022, Rochester, MI, USA, October 10-14, 2022, 2022, pp. 170:1–170:4.
+    \item Ennio Visconti, et al. "Model-driven engineering city spaces via bidirectional model transformations," in Softw. Syst. Model., vol. 20, no. 6, pp. 2003–2022, 2021.
+    \item Ennio Visconti, et al, "Online monitoring of spatio-temporal properties for imprecise signals," in MEMOCODE '21: 19th ACM-IEEE International Conference on Formal Methods and Models for System Design, Virtual Event, China, November 20 - 22, 2021, 2021, pp. 78–88.
+    \item Laura Vana, et al. "Posterior predictive model assessment using formal methods in a spatio-temporal mode," in CoRR, vol. abs/2110.01360, 2021.
+    \item Laura Nenzi, et al, "Monitoring Spatio-Temporal Properties (Invited Tutorial)," in Runtime Verification - 20th International Conference, RV 2020, Los Angeles, CA, USA, October 6-9, 2020, Proceedings, 2020, pp. 21–46.
+    \item Ennio Visconti, et al, "Model-Driven Design of City Spaces via Bidirectional Transformations," in 22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems, MODELS 2019, Munich, Germany, September 15-20, 2019, 2019, pp. 45–55.
+\end{itemize}
+}
+
 
 \clearpage
 
